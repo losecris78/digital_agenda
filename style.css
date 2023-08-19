@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+#main{
+    background-image: url("./images/yellow_pages.jpg");
+}
+h1, h2, h3{
+    font-family: 'Yatra One', cursive;
+    text-align: center;
+}
+#main form{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+    font-weight: 800;
+    font-size: 27px;
+    
+}
+form input{
+    height: 20px;
+}
+#main table{
+    padding: 10px;
+    margin: 10px 12px;
+    font-size: 24px;
+    width: 100%;
+    max-width: 800px;
+}
+thead{
+    font-weight: bold;
+
+}
+#main button{
+    align-items: center;
+    text-align: center;
+}
+#main button img{
+    width: 36px;
+}

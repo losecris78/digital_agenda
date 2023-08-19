@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Agenda</h1>
+        </div>
+    </header>
+<div id="main">
+    <form id="forma">
+        <label for="name">Nome</label>
+        <input type="text" id="name" required placeholder="Nome"><br>
+        <label for="last_name">Sobrenome</label>
+        <input type="text" id="last_name" placeholder="Sobrenome"><br>
+        <label for="organization">Organização</label>
+        <input type="text" id="company" placeholder="Organization"><br>
+        <label for="telefone">Tel</label>
+        <input type="tel" id="telefone"required pattern="[0-9]{4}+'-'+[0-9]{4}" title="8 dígitos xxxx-xxxx" placeholder="xxxx-xxxx"><br>
+        <button id="btn_sub" type="submit">Salvar<img src="./images/add_user.png" alt="Add contact"></button>
+
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+                <td>Telefone</td>
+                <td>Organização</td>
+            </tr>
+        </thead>
+        <tbody id="folha">
+            <tr>
+                <td>Usuario</td>
+                <td>Um</td>
+                <td>xxx-xxxx</td>
+                <td>Amigos</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+
+<footer>
+<div>
+    <p>&copy;2023 | Cristian L Sedas</p>
+</div>
+</footer>
+    <script src="./main.js"></script>
+</body>
+</html>
