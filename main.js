@@ -5,6 +5,12 @@ let directory = [];
 let grupos = [];
 let telefones = [];
 
+//set the year
+let date  = new Date();
+let year= date.getFullYear();
+document.getElementById('Year').innerHTML= year; 
+
+
 console.log(formato);
 formato.addEventListener('submit', function(e){
     e.preventDefault();
@@ -13,9 +19,8 @@ formato.addEventListener('submit', function(e){
 });
 function adicionaLinha(){
     const usuario = document.getElementById('name');
-    const sobreNome = document.getElementById('last_name');
-    const grupo = document.getElementById('company');
     const fone = document.getElementById('telefone');
+    const grupo = document.getElementById('company');
     
 
     if(directory.includes(usuario.value)){
@@ -27,21 +32,19 @@ function adicionaLinha(){
         
         let linha ='<tr>';
         linha += `<td> ${usuario.value}</td>`;
-        linha += `<td> ${grupo.value} </td>`;
         linha += `<td> ${fone.value} </td>`;
-        //Na linha 12 o ? significa o if true, e : significa else. Substituida a string para colocar as imágens
-        //linha += `<td> ${inputNotaAtividade.value >= 7 ? 'Aprovado' : 'Reprovado'}</td>`;
-        //linha += `<td> ${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado}</td>`;
+        linha += `<td> ${grupo.value} </td>`;
         linha += '</tr>';
         linhas += linha;
     }      
     usuario.value = '';
     grupo.value = '';
     fone.value = '';
-    //alert(`Atividade: ${inputNomeAtividade.value}, nota: ${notaAtividade.value}`);
+  
 };
 function atualizaDir(){
     const agenda = document.querySelector('tbody');
-    corpoTabela.innerHTML = linhas;
+    agenda.innerHTML = linhas;
 };
+
 

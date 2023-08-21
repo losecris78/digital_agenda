@@ -18,14 +18,12 @@
     </header>
 <div id="main">
     <form id="forma">
-        <label for="name">Nome</label>
-        <input type="text" id="name" required placeholder="Nome"><br>
-        <label for="last_name">Sobrenome</label>
-        <input type="text" id="last_name" placeholder="Sobrenome"><br>
+        <label for="name">Nome completo</label>
+        <input type="text" id="name" required placeholder="Nome Sobrenome"><br>
         <label for="organization">Organização</label>
         <input type="text" id="company" placeholder="Organization"><br>
         <label for="telefone">Tel</label>
-        <input type="tel" id="telefone"required pattern="[0-9]{4}+'-'+[0-9]{4}" title="8 dígitos xxxx-xxxx" placeholder="xxxx-xxxx"><br>
+        <input type="tel" id="telefone"required pattern="[0-9]{10}" title="10 dígitos xxxxxxxx" placeholder="xxxxxxxxxx"><br>
         <button id="btn_sub" type="submit">Salvar<img src="./images/add_user.png" alt="Add contact"></button>
 
     </form>
@@ -34,7 +32,6 @@
         <thead>
             <tr>
                 <td>Nome</td>
-                <td>Sobrenome</td>
                 <td>Telefone</td>
                 <td>Organização</td>
             </tr>
@@ -42,8 +39,7 @@
         <tbody >
             <tr>
                 <td>Usuario</td>
-                <td>Um</td>
-                <td>xxx-xxxx</td>
+                <td>xxxxxxxxx</td>
                 <td>Amigos</td>
             </tr>
         </tbody>
@@ -54,7 +50,7 @@
 
 <footer>
 <div>
-    <p>&copy;2023 | Cristian L Sedas</p>
+    <p>&copy;<span id="Year"></span> | Cristian L Sedas</p>
 </div>
 </footer>
     <script src="./main.js"></script>
