@@ -31,7 +31,7 @@ function adicionaLinha(){
         telefones.push(fone.value);
         
         let linha ='<tr>';
-        linha += `<td> ${usuario.value}</td>`;
+        linha += `<td> ${usuario.value} </td>`;
         linha += `<td> ${fone.value} </td>`;
         linha += `<td> ${grupo.value} </td>`;
         linha += '</tr>';
