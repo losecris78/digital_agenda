@@ -23,8 +23,8 @@ function adicionaLinha(){
     const grupo = document.getElementById('company');
     
 
-    if(directory.includes(usuario.value)){
-        alert(`O contato: ${usuario.value} já foi inserido`)
+    if(telefones.includes(fone.value)){
+        alert(`O número: ${fone.value} já foi inserido`)
     } else{
         directory.push(usuario.value);
         grupos.push(grupo.value);
